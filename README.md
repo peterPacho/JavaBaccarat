@@ -1,5 +1,5 @@
 ## Description
-Java Baccarat game project made for a University of Illinois CS 342 Class.
+Java Baccarat game project made for the University of Illinois CS 342 Class.
 
 [Link to the demo](https://www.youtube.com/watch?v=Eg6--YaJux0)
 
