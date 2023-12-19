@@ -1,0 +1,117 @@
+/**
+
+https://stackoverflow.com/questions/27453799/how-do-i-draw-a-border-around-the-text-of-a-javafx-label
+
+Now used mostly to assign the same look to bunch of object at once
+(so I don't need to set the style for each label separately)
+
+Load it like:
+Scene scene = new Scene(...);
+scene.getStylesheets().addAll(getClass().getResource("style.css").toExternalForm());
+
+Add it to single object like:
+objectName.getStyleClass().add("vbox_button");
+
+*/
+
+.label
+{
+    -fx-font-size: 20px;
+    -fx-effect: dropshadow(one-pass-box, black, 8, 0.0, 2, 0);
+    -fx-text-alignment: center;
+}
+
+.label .text
+{
+    -fx-fill: white;
+}
+
+.menu .text
+{
+    -fx-fill: black;
+    -fx-font-size: 10px;
+}
+
+.menu .label
+{
+    -fx-effect: none;
+}
+
+.menu-bar .label
+{
+    -fx-text-fill: white;
+}
+
+.menu-bar
+{
+    -fx-background-color: transparent;
+}
+
+
+.scroll-pane
+{
+    -fx-background-color: transparent;
+}
+
+.scroll-pane > .viewport
+{
+    -fx-background-color: rgba(0, 0, 0, 0.1);
+    -fx-background-radius: 10;
+}
+
+.scroll-pane > .corner
+{
+    -fx-background-color: transparent;
+}
+
+.vbox_button
+{
+    -fx-cursor: hand;
+    -fx-background-color: rgba(0, 0, 0, 0.1);
+    -fx-background-radius: 10;
+    -fx-border-style: solid;
+    -fx-border-radius: 10;
+    -fx-border-color: rgba(0, 0, 0, 0.75);
+    /*-fx-effect: dropshadow(one-pass-box, black, 8, 0.0, 2, 0);*/
+}
+
+.vbox_button:hover
+{
+    -fx-background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+.vbox_button_disabled_label .text
+{
+    -fx-fill: rgb(128, 128, 128);
+    -fx-effect: none;
+}
+
+.vbox_button_disabled
+{
+    -fx-background-color: rgba(0, 0, 0, 0.1);
+    -fx-background-radius: 10;
+    -fx-border-style: solid;
+    -fx-border-radius: 10;
+    -fx-cursor: none;
+    -fx-border-color: rgba(0, 0, 0, 0.5);
+}
+
+.vbox_disabled:hover
+{
+    -fx-background-color: rgba(0, 0, 0, 0.1);
+}
+
+.region
+{
+    -fx-border-color: rgba(0, 0, 0, 0.2);
+    -fx-background-color: rgba(0, 0, 0, 0.1);
+    -fx-background-radius: 10;
+    -fx-border-style: solid;
+    -fx-border-radius: 10
+}
+
+.betButtonRegion
+{
+    -fx-background-color: transparent;
+}
